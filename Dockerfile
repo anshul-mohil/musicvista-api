@@ -6,3 +6,5 @@ COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
 EXPOSE 8090:8080
 ENTRYPOINT ["java","-cp","app:app/lib/*","hello.Application"]
+
+
